@@ -45,3 +45,17 @@ button {
   background: none;
   border: none;
 }
+
+.headline {
+  @include flex(row, center, space-around);
+  color: $light_gray;
+  padding: 10px 30px;
+
+  hr {
+     background-color: $light_gray;
+     opacity: 0.4;
+     width: 25%;
+     border: 0;
+     height: 1px;
+  }
+}

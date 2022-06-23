@@ -4,6 +4,7 @@ import {
 import Header from './components/header/Header';
 import './App.scss';
 import Home from './components/home/Home';
+import Works from './components/works/Works';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="App">
         <Header />
         <Home />
+        <Works />
       </div>
     </Router>
   );

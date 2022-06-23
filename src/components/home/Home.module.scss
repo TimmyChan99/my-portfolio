@@ -1,9 +1,9 @@
 @import '../../App.scss';
 
 .home_section {
-	@include flex(column, flex-start, space-around);
-//	background-color: $dark_blue;
+	@include flex(column, flex-start, flex-start);
 	width: 75vw;
+	height: 70vh;
 	color: $white;
 	margin: 20% auto;
 

@@ -17,7 +17,6 @@ function Home() {
       </p>
       <button type="button">Contact Me</button>
     </section>
-		
   );
 }
 
