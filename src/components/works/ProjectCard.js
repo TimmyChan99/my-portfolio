@@ -1,9 +1,11 @@
 import React from 'react';
-import budget from ''
+import styles from './ProjectCard.module.scss';
+import budget from '../../images/mybudget.png';
+
 const ProjectCard = () => (
-  <div>
+  <div className={styles.card_container}>
     <h3>myBudget</h3>
-    <img src="" alt="mybugdet" />
+    <img src={budget} alt="mybugdet" className={styles.project_image} />
     <p>
       myBudget is a mobile web application where you can manage your budget:
       you have a list of transactions associated with a category,
@@ -16,8 +18,10 @@ const ProjectCard = () => (
       <li>HTML</li>
       <li>RSpec</li>
     </ul>
-    <button type="button">Source</button>
-    <button type="button">Live</button>
+    <div className={styles.links_btn}>
+      <button type="button">Source</button>
+      <button type="button">Live</button>
+    </div>
   </div>
 );
 
