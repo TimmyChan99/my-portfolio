@@ -1,34 +1,55 @@
 @import '../../App.scss';
 
 .card_container {
-	@include flex(column, center, space-around);
+	@include flex(column, flex-start, space-around);
 	margin: auto;
-	min-height: 500px;
-	background-color: rgb(122, 122, 121);
+	min-height: 70vh;
+	 width: 80%; // to change
+	 position: relative;
+	 border: 1px $pink solid;
+	 padding-left: 1em;
+	 backdrop-filter: blur(14px) saturate(72%);
+	 -webkit-backdrop-filter: blur(14px) saturate(72%);
+	 background-color: rgba(255, 51, 102, 0.18);
+	 border-radius: 12px;
+	 border: 1px solid rgba(255, 255, 255, 0.125);
+
+	 .project_info {
+   width: 90%;
+
+	 h3 {
+		color: $white;
+		margin: 1em 0;
+	 }
+
+	 ul {
+		@include flex(row, center, space-around);
+		color: $lignt_dark;
+    font-weight: 900;
+		margin: 1em 0;
+		flex-wrap: wrap;
+	 }
+
+	 p {
+		color: $white;
+	 }
+
+	 }
+
+	 .links_btn {
+		@include flex(row, center, space-between);
+		flex-wrap: wrap;
+		width: 50%;
+
+		button {
+			border: 1px $pink solid;
+			color: $pink;
+			border-radius: 2px;
+			padding: 0.5em 1.2em;
+		}
+	 }
 
 	.project_image {
-		border-radius: 3px
-	}
-
-	ul {
-		@include flex(row, center, space-around);
-		flex-wrap: wrap;
-		//width: 60%;
-
-		li {
-			color: $pink;
-			border: 1px $pink solid;
-			border-radius: 4px;
-			padding: 0.2em 0.7em;
-		}
-	}
-
-	.links_btn {
-		button {
-			color: $white;
-			background-color: $pink;
-			border-radius: 4px;
-			padding: 0.7em 1.6em;
-		}
+		width: 90%;
 	}
 }
