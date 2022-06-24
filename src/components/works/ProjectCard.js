@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ProjectCard.module.scss';
-import budget from '../../images/mybudget.png';
-//import Long from '../../images/long.png';
+// import budget from '../../images/mybudget.png';
+import Long from '../../images/long.png';
 
 const ProjectCard = () => (
   <div className={styles.card_container}>
@@ -19,13 +19,12 @@ const ProjectCard = () => (
         you have a list of transactions associated with a category,
         so that you can see how much money you spent and on what.
       </p>
+      <div className={styles.links_btn}>
+        <button type="button">Source</button>
+        <button type="button">Live</button>
+      </div>
     </div>
-    <div className={styles.links_btn}>
-      <button type="button">Source</button>
-      <button type="button">Live</button>
-    </div>
-    <img src={budget} alt="mybugdet" className={styles.project_image} />
-    {/* <img src={Long} alt="mybugdet" className={styles.project_img} /> */}
+    <img src={Long} alt="mybugdet" className={styles.project_img} />
   </div>
 );
 
