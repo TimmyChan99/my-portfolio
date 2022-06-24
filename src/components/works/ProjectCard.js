@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './ProjectCard.module.scss';
 
 const ProjectCard = ({ project }) => (
@@ -23,5 +24,9 @@ const ProjectCard = ({ project }) => (
     <img src={project.mobile_img} alt="project screenshot" className={styles.project_img} />
   </div>
 );
+
+ProjectCard.propTypes = {
+  project: PropTypes.oneOfType([PropTypes.object]).isRequired,
+};
 
 export default ProjectCard;

@@ -1,0 +1,10 @@
+@import '../../App.scss';
+
+.project_list {
+  display: grid;
+  grid-template-rows: repeat(4, 650px);
+  grid-template-columns: repeat(1, 80%);
+  row-gap: 80px;
+  margin-top: 60px;
+  justify-content: center;
+}
