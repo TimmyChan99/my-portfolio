@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './ProjectCard.module.scss';
-// import budget from '../../images/mybudget.png';
-import Long from '../../images/long.png';
+import budget from '../../images/long.png';
 
 const ProjectCard = () => (
   <div className={styles.card_container}>
@@ -24,7 +23,7 @@ const ProjectCard = () => (
         <button type="button">Live</button>
       </div>
     </div>
-    <img src={Long} alt="mybugdet" className={styles.project_img} />
+    <img src={budget} alt="mybugdet" className={styles.project_img} />
   </div>
 );
 
