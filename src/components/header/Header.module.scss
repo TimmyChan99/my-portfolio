@@ -1,0 +1,61 @@
+@import '../../App.scss';
+
+.menu {
+  display: flex;
+}
+
+.header {
+  @include flex(row, center, space-between);
+
+  padding: 1.5rem;
+}
+
+.logo {
+  font-size: larger;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: $white;
+
+  span {
+    color: $pink;
+  }
+}
+
+.navList {
+  background-color: $black1;
+  position: fixed;
+  top: 0;
+  left: 30vw;
+  right: 0;
+  bottom: 0;
+
+  button {
+    color: $white;
+    font-size: 2.5em;
+    position: absolute;
+    top: 1%;
+    right: 10%;
+  }
+
+  ul {
+    @include flex(column, center, space-around);
+
+    height: 25vh;
+    margin-top: 50%;
+
+    li {
+      width: 100%;
+      padding: 4%;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    li:hover {
+      opacity: 0.5;
+    }
+
+    a {
+      color: $white;
+    }
+  }
+}
