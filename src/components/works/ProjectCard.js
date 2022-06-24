@@ -1,29 +1,26 @@
 import React from 'react';
 import styles from './ProjectCard.module.scss';
-import budget from '../../images/long.png';
 
-const ProjectCard = () => (
+const ProjectCard = ({ project }) => (
   <div className={styles.card_container}>
     <div className={styles.project_info}>
-      <h3>myBudget</h3>
+      <h3>{project.name}</h3>
       <ul>
-        <li>Rails</li>
-        <li>Ruby</li>
-        <li>Sass</li>
-        <li>HTML</li>
-        <li>RSpec</li>
+        {project.tech_list.map((tech) => (
+          <li key={tech}>{tech}</li>
+        ))}
       </ul>
-      <p>
-        myBudget is a mobile web application where you can manage your budget:
-        you have a list of transactions associated with a category,
-        so that you can see how much money you spent and on what.
-      </p>
+      <p>{project.description}</p>
       <div className={styles.links_btn}>
-        <button type="button">Source</button>
-        <button type="button">Live</button>
+        <button type="button">
+          <a href={project.repo_link}>Source</a>
+        </button>
+        <button type="button">
+          <a href={project.live_link}>Live</a>
+        </button>
       </div>
     </div>
-    <img src={budget} alt="mybugdet" className={styles.project_img} />
+    <img src={project.mobile_img} alt="project screenshot" className={styles.project_img} />
   </div>
 );
 

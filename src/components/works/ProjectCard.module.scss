@@ -34,9 +34,14 @@
 
 		ul {
 			@include flex(row, flex-start, space-around);
-			width: 90%;
+			flex-wrap: wrap;
+			width: 85%;
 			color: #06013a;
 			font-weight: 700;
+
+			li {
+				margin-left: 5px;
+			}
 		}
 
 		p {

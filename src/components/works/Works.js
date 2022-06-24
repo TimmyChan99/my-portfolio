@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import data from '../../images/data';
 
 const Works = () => (
   <section id="works">
@@ -9,9 +10,11 @@ const Works = () => (
       <hr />
     </div>
     <ul>
-      <li>
-        <ProjectCard />
-      </li>
+      { data.map((project) => (
+        <li key={project.id}>
+          <ProjectCard project={project} />
+        </li>
+      ))}
     </ul>
   </section>
 );
