@@ -26,6 +26,7 @@ function NavBar() {
       <button
         type="button"
         onClick={toggleNav}
+        className={styles.mobile_btn}
       >
         <RiMenu3Fill color="white" fontSize="1.7em" />
       </button>
@@ -35,6 +36,7 @@ function NavBar() {
           <button
             type="button"
             onClick={toggleNav}
+            className={styles.mobile_btn}
           >
             &times;
           </button>
