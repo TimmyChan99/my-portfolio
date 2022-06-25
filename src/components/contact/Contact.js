@@ -4,7 +4,7 @@ import SocialMedia from './SocialMedia';
 import styles from './Contact.module.scss';
 
 const Contact = () => (
-  <div className={styles.contact}>
+  <section className={styles.contact} id="contact">
     <div className="headline">
       <hr />
       <h2>Get in touch</h2>
@@ -19,7 +19,7 @@ const Contact = () => (
       <SiGmail />
       <a href="mailto: felemenoun@gmail.com">felemenoun@gmail.com</a>
     </div>
-  </div>
+  </section>
 );
 
 export default Contact;

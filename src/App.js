@@ -1,6 +1,3 @@
-import {
-  BrowserRouter as Router,
-} from 'react-router-dom';
 import Header from './components/header/Header';
 import './App.scss';
 import Home from './components/home/Home';
@@ -10,15 +7,13 @@ import Contact from './components/contact/Contact';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Home />
-        <Works />
-        <AboutMe />
-        <Contact />
-      </div>
-    </Router>
+    <div className="App">
+      <Header />
+      <Home />
+      <Works />
+      <AboutMe />
+      <Contact />
+    </div>
   );
 }
 

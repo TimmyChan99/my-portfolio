@@ -6,7 +6,7 @@ import resume from '../../assets/Resume.pdf';
 import skills from '../../assets/skills';
 
 const AboutMe = () => (
-  <section className={styles.aboutme_section}>
+  <section className={styles.aboutme_section} id="aboutMe">
     <div className="headline">
       <hr />
       <h2>About Me</h2>
