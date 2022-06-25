@@ -1,5 +1,8 @@
+/* eslint no-tabs: ["error", { allowIndentationTabs: true }] */
+/* eslint no-mixed-spaces-and-tabs: ["error", "smart-tabs"] */
+
 import {
-  SiJavascript, SiRuby, SiHtml5, SiCss3,
+  SiJavascript, SiRuby, SiHtml5, SiCss3, SiPostgresql,
   SiReact, SiRubyonrails, SiJest, SiRedux,
   SiSwagger, SiVisualstudiocode, SiHeroku,
 } from 'react-icons/si';
@@ -68,7 +71,7 @@ const skills = [
   },
   {
     id: 3,
-    title: 'Tools',
+    title: 'Tools & Skills',
     list: [
       {
         name: 'GitHub',
@@ -93,6 +96,10 @@ const skills = [
       {
         name: 'Heroku',
         icon: SiHeroku,
+		  },
+      {
+        name: 'PostgreSQL',
+        icon: SiPostgresql,
 		  },
     ],
   },

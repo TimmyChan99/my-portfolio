@@ -1,0 +1,39 @@
+@import '../../App.scss';
+
+.contact {
+  @include flex(column, center, space-around);
+
+  background-color: #2d2d2d;
+  width: 90%;
+  height: 350px;
+  margin: 50px auto;
+  padding: 1em;
+  border-radius: 8px;
+  color: $white;
+
+	p {
+		text-align: center;
+	}
+
+	a {
+		color: $white;
+	}
+
+	.social_media {
+		@include flex(row, center, space-around);
+		width: 90%;
+
+	   a {
+			font-size: 30px;
+		 }
+		
+	}
+
+  div:last-child {
+		@include flex(row, center, space-around);
+		border: 1px $white solid;
+    border-radius: 8px;
+		padding: 0.7em 0.5em;
+		width: 70%;
+	}
+}
