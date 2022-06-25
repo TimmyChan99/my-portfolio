@@ -62,13 +62,12 @@
 }
 
 .navbar_underlayout {
-  background-color: $pink;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   backdrop-filter: blur(6px) saturate(78%);
-    -webkit-backdrop-filter: blur(10px) saturate(78%);
-    background-color: rgba(100, 86, 255, 0.4);
+  -webkit-backdrop-filter: blur(10px) saturate(78%);
+  background-color: rgba(100, 86, 255, 0.4);
 }

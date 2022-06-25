@@ -11,29 +11,30 @@
   border-radius: 8px;
   color: $white;
 
-	p {
-		text-align: center;
-	}
+  p {
+    text-align: center;
+  }
 
-	a {
-		color: $white;
-	}
+  a {
+    color: $white;
+  }
 
-	.social_media {
-		@include flex(row, center, space-around);
-		width: 90%;
+  .social_media {
+    @include flex(row, center, space-around);
 
-	   a {
-			font-size: 30px;
-		 }
-		
-	}
+    width: 90%;
+
+    a {
+      font-size: 30px;
+    }
+  }
 
   div:last-child {
-		@include flex(row, center, space-around);
-		border: 1px $white solid;
+    @include flex(row, center, space-around);
+
+    border: 1px $white solid;
     border-radius: 8px;
-		padding: 0.7em 0.5em;
-		width: 70%;
-	}
+    padding: 0.7em 0.5em;
+    width: 70%;
+  }
 }
