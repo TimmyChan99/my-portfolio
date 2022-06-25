@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink as Link } from 'react-router-dom';
 import { RiMenu3Fill } from 'react-icons/ri';
 import styles from './Header.module.scss';
 
@@ -18,24 +17,26 @@ function NavBar() {
         <RiMenu3Fill color="white" fontSize="1.7em" />
       </button>
       { toggleMenu && (
-      <div className={styles.navList}>
-        <button
-          type="button"
-          onClick={toggleNav}
-        >
-          &times;
-        </button>
-        <ul>
-          <li>
-            <Link to="#works">Works</Link>
-          </li>
-          <li>
-            <Link to="#aboutMe">About me</Link>
-          </li>
-          <li>
-            <Link to="#contact">Contact</Link>
-          </li>
-        </ul>
+      <div className={styles.navbar_underlayout}>
+        <div className={styles.navList}>
+          <button
+            type="button"
+            onClick={toggleNav}
+          >
+            &times;
+          </button>
+          <ul>
+            <li>
+              <a onClick={toggleNav} href="#works">Works</a>
+            </li>
+            <li>
+              <a onClick={toggleNav} href="#aboutMe">About me</a>
+            </li>
+            <li>
+              <a onClick={toggleNav} href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
       )}
     </nav>
