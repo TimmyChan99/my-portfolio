@@ -15,7 +15,9 @@ function Home() {
         of my work and experience! If you like what you see and have a project
         you need coded, don&lsquo;t hestiate to contact me.
       </p>
-      <button type="button">Contact Me</button>
+      <button type="button">
+        <a href="#contact">Contact Me</a>
+      </button>
     </section>
   );
 }

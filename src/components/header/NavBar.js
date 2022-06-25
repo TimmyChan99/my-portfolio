@@ -17,24 +17,26 @@ function NavBar() {
         <RiMenu3Fill color="white" fontSize="1.7em" />
       </button>
       { toggleMenu && (
-      <div className={styles.navList}>
-        <button
-          type="button"
-          onClick={toggleNav}
-        >
-          &times;
-        </button>
-        <ul>
-          <li>
-            <a onClick={toggleNav} href="#works">Works</a>
-          </li>
-          <li>
-            <a onClick={toggleNav} href="#aboutMe">About me</a>
-          </li>
-          <li>
-            <a onClick={toggleNav} href="#contact">Contact</a>
-          </li>
-        </ul>
+      <div className={styles.navbar_underlayout}>
+        <div className={styles.navList}>
+          <button
+            type="button"
+            onClick={toggleNav}
+          >
+            &times;
+          </button>
+          <ul>
+            <li>
+              <a onClick={toggleNav} href="#works">Works</a>
+            </li>
+            <li>
+              <a onClick={toggleNav} href="#aboutMe">About me</a>
+            </li>
+            <li>
+              <a onClick={toggleNav} href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
       )}
     </nav>

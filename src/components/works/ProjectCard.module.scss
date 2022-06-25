@@ -19,7 +19,7 @@
 
     z-index: 10;
     width: 100%;
-    min-height: 55%;
+    min-height: 65%;
     position: absolute;
     right: 8%;
     bottom: 5%;
@@ -33,12 +33,15 @@
       @include flex(row, flex-start, space-around);
 
       flex-wrap: wrap;
-      width: 85%;
-      color: #06013a;
-      font-weight: 700;
-
+      width: 95%;
+      color: $white;
+      
       li {
-        margin-left: 5px;
+        margin: 5px 0 0 5px;
+        font-weight: 500;
+        border: 1px $white solid;
+        padding: .3em;
+        border-radius: 8px;
       }
     }
 
@@ -55,11 +58,14 @@
 
     button {
       background-color: $white;
-      color: $pink;
       padding: 0.6em 1em;
       border-radius: 8px;
       width: 40%;
-      font-weight: 700;
+      
+      a {
+        color: $pink;
+        font-weight: 700;
+      }
     }
   }
 }
