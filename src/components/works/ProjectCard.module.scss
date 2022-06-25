@@ -17,7 +17,7 @@
   .project_info {
     @include flex(column, flex-start, space-evenly);
 
-    z-index: 10;
+    z-index: 1;
     width: 100%;
     min-height: 65%;
     position: absolute;

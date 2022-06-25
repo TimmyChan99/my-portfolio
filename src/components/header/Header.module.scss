@@ -70,4 +70,5 @@
   backdrop-filter: blur(6px) saturate(78%);
   -webkit-backdrop-filter: blur(10px) saturate(78%);
   background-color: rgba(100, 86, 255, 0.4);
+  z-index: 3;
 }

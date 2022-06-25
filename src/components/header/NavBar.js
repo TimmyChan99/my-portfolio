@@ -1,13 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { RiMenu3Fill } from 'react-icons/ri';
 import styles from './Header.module.scss';
 
 function NavBar() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', changeWidth);
+
+    return () => {
+      window.removeEventListener('resize', changeWidth);
+    };
+  }, []);
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   };
+
   return (
     <nav>
       <button
@@ -16,7 +29,7 @@ function NavBar() {
       >
         <RiMenu3Fill color="white" fontSize="1.7em" />
       </button>
-      { toggleMenu && (
+      { (toggleMenu || screenWidth > 500) && (
       <div className={styles.navbar_underlayout}>
         <div className={styles.navList}>
           <button
