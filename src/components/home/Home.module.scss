@@ -39,5 +39,47 @@
       color: $pink;
     }
   }
+
 }
 
+@media screen and (min-width: 500px) {
+  .home_section {
+    width: 50vw;
+    height: 50vh;
+    margin: 10% 20%;
+    padding: relative;
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    a, span, p {
+      line-height: 1.4em;
+      font-size: 1.2em;
+    }
+
+    a {
+      font-weight: 700;
+    }
+
+  }
+  .social_media_desktop {
+    position: absolute;
+    left: 10%;
+
+    li {
+      margin-top: 10px;
+      
+    }
+    
+    a {
+      color: $white;
+      font-size: 31px;
+    }
+  }
+
+}
