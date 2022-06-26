@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.248db8ee.css",
+    "main.js": "/my-portfolio/static/js/main.2f234b9c.js",
+    "static/media/rentar_desktop.png": "/my-portfolio/static/media/rentar_desktop.27f62e0e921874276173.png",
+    "static/media/rentar.png": "/my-portfolio/static/media/rentar.f99532ecb2ee4fc816d3.png",
+    "static/media/Resume.pdf": "/my-portfolio/static/media/Resume.95651360570373ca77c8.pdf",
+    "static/media/covid19-3.png": "/my-portfolio/static/media/covid19-3.d1579e1fdad5e4d61c17.png",
+    "static/media/budget_cate_desktop.png": "/my-portfolio/static/media/budget_cate_desktop.78adc221271d2c5d8f85.png",
+    "static/media/toDoListDesktop.png": "/my-portfolio/static/media/toDoListDesktop.4894877bd6e6359f1619.png",
+    "static/media/toDoList.png": "/my-portfolio/static/media/toDoList.39b92c14d2c55f759f82.png",
+    "static/media/covidtraker.png": "/my-portfolio/static/media/covidtraker.6fb3b91a65a222078ca7.png",
+    "static/media/covid19-2.png": "/my-portfolio/static/media/covid19-2.ca94d41fbc2914cb6c23.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.248db8ee.css.map": "/my-portfolio/static/css/main.248db8ee.css.map",
+    "main.2f234b9c.js.map": "/my-portfolio/static/js/main.2f234b9c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.248db8ee.css",
+    "static/js/main.2f234b9c.js"
+  ]
+}
