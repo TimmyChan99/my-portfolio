@@ -77,3 +77,25 @@
     }
   }
 }
+
+@media screen and (min-width: 500px) {
+  .aboutme {
+    width: 55%;
+    height: 300px;
+    padding: 1.2em;
+    font-size: 1.2em;
+  }
+
+  .skills_card_list {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 0 2%;
+    margin-top: 60px;
+    justify-content: center;
+  }
+
+  .skill_card {
+    height: auto;
+    min-height: 400px;
+  }
+}
