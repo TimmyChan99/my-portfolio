@@ -69,3 +69,25 @@
     }
   }
 }
+
+@media screen and (min-width: 500px) {
+  
+  .card_container {
+    height: 50vh;
+    border: 3px red solid;
+    padding: 0;
+
+    .project_img {
+      object-fit: contain;
+      width: 45%;
+      height: 60%;
+      background: bisque;
+      border-radius: 2px;
+    }
+
+    .project_info {
+      position: initial;
+      display: none;
+    }
+  }
+}

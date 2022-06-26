@@ -41,6 +41,9 @@
   }
 
 }
+.social_media_desktop {
+  display: none;
+}
 
 @media screen and (min-width: 500px) {
   .home_section {
@@ -68,6 +71,7 @@
 
   }
   .social_media_desktop {
+    display: block;
     position: absolute;
     left: 10%;
 

@@ -1,20 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import styles from './Home.module.scss';
 import SocialMedia from '../contact/SocialMedia';
 
 function Home() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const changeWidth = () => {
-      setScreenWidth(window.innerWidth);
-    };
-    window.addEventListener('resize', changeWidth);
-
-    return () => {
-      window.removeEventListener('resize', changeWidth);
-    };
-  }, []);
-
   return (
     <section className={styles.home_section}>
       <div>
@@ -31,7 +18,7 @@ function Home() {
       <button type="button">
         <a href="#contact">Contact Me</a>
       </button>
-      { (screenWidth > 500) && (<SocialMedia />)}
+      <SocialMedia />
     </section>
   );
 }

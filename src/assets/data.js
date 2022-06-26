@@ -2,6 +2,7 @@ import budget from './long.png';
 import covidTracker from './covidtraker.png';
 import rentar from './rentar.png';
 import toDoList from './toDoList.png';
+import rentarDesktop from './rentar_desktop.png';
 
 const data = [
   {
@@ -18,6 +19,7 @@ const data = [
     live_link: 'https://mybudget-railsapp.herokuapp.com/',
     repo_link: 'https://github.com/TimmyChan99/Budget-app/',
     mobile_img: budget,
+    desktop_img: budget,
   },
   {
     id: 2,
@@ -33,6 +35,7 @@ const data = [
     live_link: 'https://timmychan99.github.io/covid19-tracker/',
     repo_link: 'https://github.com/TimmyChan99/covid19-tracker',
     mobile_img: covidTracker,
+    desktop_img: covidTracker,
   },
   {
     id: 3,
@@ -48,6 +51,7 @@ const data = [
     live_link: 'https://car-renta.herokuapp.com/',
     repo_link: 'https://github.com/TimmyChan99/Car-rental-app-back-end',
     mobile_img: rentar,
+    desktop_img: rentarDesktop,
   },
   {
     id: 4,
@@ -62,6 +66,7 @@ const data = [
     live_link: 'https://timmychan99.github.io/To_Do_list/',
     repo_link: 'https://github.com/TimmyChan99/To_Do_list',
     mobile_img: toDoList,
+    desktop_img: toDoList,
   },
 ];
 
