@@ -38,3 +38,18 @@
     width: 70%;
   }
 }
+
+@media screen and (min-width: 500px) {
+
+  .contact {
+    @include flex(column, center, space-around);
+    width: 60%;
+    font-size: 1.2em;
+
+    .social_media {
+      position: relative;
+    }
+
+    
+  }
+}

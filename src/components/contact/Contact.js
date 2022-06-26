@@ -14,7 +14,7 @@ const Contact = () => (
       I&apos;m always interested in hearing about new projects,
       so if you&apos;d like to chat please get in touch.
     </p>
-    <SocialMedia />
+    <SocialMedia style={styles.social_desktop} />
     <div>
       <SiGmail />
       <a href="mailto: felemenoun@gmail.com">felemenoun@gmail.com</a>

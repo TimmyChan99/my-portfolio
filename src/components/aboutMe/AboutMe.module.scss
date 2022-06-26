@@ -97,5 +97,16 @@
   .skill_card {
     height: auto;
     min-height: 400px;
+
+    ul {
+  
+      width: 60%;
+      height: 75%;
+      flex-wrap: wrap;
+
+      li {
+        margin-top: 10px;
+      }
+    }  
   }
 }
