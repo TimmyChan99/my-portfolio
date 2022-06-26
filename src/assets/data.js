@@ -1,8 +1,13 @@
 import budget from './long.png';
 import covidTracker from './covidtraker.png';
+import covidTrackerDesktop from './covid19-2.png';
+import covidTrackerDesktopCounty from './covid19-3.png';
 import rentar from './rentar.png';
 import toDoList from './toDoList.png';
+import toDoListDesktop from './toDoListDesktop.png';
 import rentarDesktop from './rentar_desktop.png';
+import budgetDesktopCategories from './budget_cate_desktop.png';
+import budgetDesktop from './budget_desktop.png';
 
 const data = [
   {
@@ -19,7 +24,7 @@ const data = [
     live_link: 'https://mybudget-railsapp.herokuapp.com/',
     repo_link: 'https://github.com/TimmyChan99/Budget-app/',
     mobile_img: budget,
-    desktop_img: budget,
+    desktop_img: [budgetDesktop, budgetDesktopCategories],
   },
   {
     id: 2,
@@ -35,7 +40,7 @@ const data = [
     live_link: 'https://timmychan99.github.io/covid19-tracker/',
     repo_link: 'https://github.com/TimmyChan99/covid19-tracker',
     mobile_img: covidTracker,
-    desktop_img: covidTracker,
+    desktop_img: [covidTrackerDesktop, covidTrackerDesktopCounty],
   },
   {
     id: 3,
@@ -51,7 +56,7 @@ const data = [
     live_link: 'https://car-renta.herokuapp.com/',
     repo_link: 'https://github.com/TimmyChan99/Car-rental-app-back-end',
     mobile_img: rentar,
-    desktop_img: rentarDesktop,
+    desktop_img: [rentarDesktop],
   },
   {
     id: 4,
@@ -66,7 +71,7 @@ const data = [
     live_link: 'https://timmychan99.github.io/To_Do_list/',
     repo_link: 'https://github.com/TimmyChan99/To_Do_list',
     mobile_img: toDoList,
-    desktop_img: toDoList,
+    desktop_img: [toDoListDesktop],
   },
 ];
 

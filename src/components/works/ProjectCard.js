@@ -35,7 +35,13 @@ const ProjectCard = ({ project }) => {
           </button>
         </div>
       </div>
-      { screenWidth < 500 ? (<img src={project.mobile_img} alt="project screenshot" className={styles.project_img} />) : (<img src={project.desktop_img} alt="project screenshot" className={styles.project_img} />)}
+      { (screenWidth < 500) && (<img src={project.mobile_img} alt="project screenshot" className={styles.project_img} />) }
+      { ((screenWidth >= 500) && (screenWidth <= 800)) && (<img src={project.mobile_img} alt="project screenshot" className={styles.project_img} />) }
+      { (screenWidth > 800) && (
+      <div className={styles.project_img}>
+        {project.desktop_img.map((image) => (<img src={image} alt="project screenshot" key={image} />))}
+      </div>
+      ) }
     </div>
   );
 };
